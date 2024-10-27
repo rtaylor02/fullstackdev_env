@@ -1,0 +1,18 @@
+{
+  "name": "JDK 21, Angular 18, PostgreSQL 16",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [5432],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "redhat.java",
+    "angular.ng-template",
+    "ms-azuretools.vscode-docker",
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-pg"
+  ],
+  "postCreateCommand": "npm install -g @angular/cli@18",
+  "remoteUser": "vscode"
+}
